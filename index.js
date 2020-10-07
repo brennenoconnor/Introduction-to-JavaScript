@@ -18,6 +18,13 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 18;
+if (votingAge > 18){
+  console.log("true")
+}
+
+
+
 
 
 /*
@@ -31,6 +38,11 @@ Do the following:
    HINT: no function required
 */
 
+let myName = "Brennen"
+let yourName = "Ashley"
+if(yourName === "Ashley"){
+  console.log(myName)
+}
 
 
 
@@ -58,11 +70,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a, b)
+{
+  return a * b;
+}  
 
-
+console.log(multiply(5, 4));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -74,12 +87,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age * 7;
 }
 
-
-
+dogYears(5)
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Dog feeder - Depending on their weight and age, we need to know how many pounds of food to feed our dog each day!
@@ -107,9 +119,35 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
+function hungryDog(weight, age){
+    if (age >= 1){
+      if (weight <= 5){
+    return (weight * .05)}
+
+    else if (weight <= 10){
+      return(weight * .04)}
+
+      else if (weight < 15){
+        return(weight * .03)}
+
+        else if (weight > 15){
+          return(weight * .02)}
+        }
+        else if (age < 1){
+          if (weight > 2){
+            return (weight * .10);
+        }
+        else if (weight > 4){
+          return (weight * .05);
+        }
+        else if (weight > 7){
+          return (weight * .04)
+        }
+  
+console.log(hungryDog(15, 1))
+  
+    
+  
 
 
 
@@ -127,9 +165,69 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(/*add your code here*/){
-    /*add your code here*/
-}
+function game(rps) {
+  if (rps = 'rock'){
+    user = 0;
+  }
+  if (rps = 'paper'){
+    user = 1;
+  }
+  if (rps = 'scissors'){
+    user = 2;
+  }
+
+  let computer = Math.floor(Math.random() * 3);
+
+  if (user === computer) {
+    return ('You Tie');
+  }
+    else if (user === 0, computer === 2){
+      return ('You Win!');
+    }
+    else if (user === 0, computer === 1){
+      return ('You Lose');
+    }
+    else if (user === 1, computer === 0){
+      return('You Win!');
+    }
+    else if (user === 1, computer === 2){
+      return('You Lose');
+    }
+    else if (user === 2, computer === 1){
+      return('You Win!');
+    }
+    else if (user === 2, computer === 0){
+      return('You Lose');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
 
